@@ -1,0 +1,8 @@
+﻿@* allow me to use the types in the SportsStore.Models namespace in views without needing to refer to the namespace *@
+@using SportsStore.Models
+@*Look for taghelperclasses in the sportstore.infrastructure namespace. *@
+@using SportsStore.Models.ViewModels
+@* enables the built-in tag helpers, which I use later to create HTML elements that reflect the configuration of the SportsStore application. *@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@* I can refer to the view model classes in views without having to qualify their names with the namespace*@
+@addTagHelper SportsStore.Infrastructure.*, SportsStore
